@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #f2f2f2;
+    background-color: #ffe6e6;
     font-family: Arial, sans-serif;
 }
 
@@ -12,6 +12,34 @@ body {
 
 h1 {
     font-size: 36px;
+    color: #ff6666;
+    transition: transform 0.3s ease-in-out;
+}
+
+h1:hover {
+    transform: scale(1.1);
+    animation: welcomeAnimation 2s;
+}
+
+@keyframes welcomeAnimation {
+    0% {
+        transform: scale(1);
+        opacity: 0.2;
+    }
+    50% {
+        transform: scale(1.1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 0.2;
+    }
+}
+
+p {
+    font-size: 20px;
+    margin: 20px 0;
+    color: #ff9966;
 }
 
 .dessert-boxes {
@@ -21,29 +49,61 @@ h1 {
 }
 
 .box {
-    width: 200px;
+    width: 250px;
     height: 250px;
-    background-color: #fff;
-    border: 1px solid #ddd;
+    border: 2px solid #ff6666;
     border-radius: 10px;
     text-align: center;
     margin: 20px;
     overflow: hidden;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease-in-out;
+    cursor: pointer;
 }
 
 .box:hover {
-    transform: scale(1.05);
+    transform: scale(1.1);
+    background-color: #f5abf6;
 }
 
-.box img {
+.box.cupcake .box-image {
+    background-image: url('assets/cupcake.png');
+}
+
+.box.ice-cream .box-image {
+    background-image: url('assets/icecream.png');
+}
+
+.box.donut .box-image {
+    background-image: url('assets/donut.png');
+}
+
+.box.cookies .box-image {
+    background-image: url('assets/cookies.png');
+}
+
+/* Common styles for all boxes */
+.box-image {
     width: 100%;
-    height: 150px;
-    object-fit: cover;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: background-image 0.3s ease-in-out; 
 }
 
-p {
-    font-size: 18px;
-    margin: 10px 0;
+.box.cupcake:hover .box-image {
+    background-image: url('assets/cupcake-tryme.png');
+}
+
+.box.ice-cream:hover .box-image {
+    background-image: url('assets/icecream-tryme.png');
+}
+
+.box.donut:hover .box-image {
+    background-image: url('assets/donut-tryme.png');
+}
+
+.box.cookies:hover .box-image {
+    background-image: url('assets/cookies-tryme.png');
 }
