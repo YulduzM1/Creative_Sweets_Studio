@@ -1,0 +1,107 @@
+h1 {
+    text-align: center;
+  }
+  
+  .donut::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .donut.sprinkles::after {
+    content: "Sprinkles";
+    background-color: #ff69b4;
+  }
+  
+  .donut.chocolate-chips::after {
+    content: "Chocolate Chips";
+    background-color: #a0522d;
+  }
+  
+  .donut.caramel::after {
+    content: "Caramel";
+    background-color: #ffd700;
+  }
+  
+  .donut.fruit::after {
+    content: "Fruit";
+    background-color: #ff7f50;
+  }
+  
+  .donut:hover::after,
+  .donut:focus::after {
+    opacity: 1;
+  }
+  
+  select {
+    align-content: center;
+    font-size: 16px;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f5deb3;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .dropdowns {
+    margin-left: 20px;
+  }
+  
+  .sprinkles {
+    position: absolute;
+  }
+  
+  .sprinkle {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+  }
+  
+  .sprinkle--1 {
+    top: -20px;
+    left: -20px;
+  }
+  
+  .sprinkle--2 {
+    top: -20px;
+  }
+  
+  .sprinkle--3 {
+    top: -20px;
+    right: -20px;
+  }
+  
+  .sprinkle--4 {
+    right: -20px;
+  }
+  
+  .sprinkle--5 {
+    bottom: -20px;
+  }
+  
+  .sprinkle--6 {
+    bottom: -20px;
+    left: -20px;
+  }
+  
+  .sprinkle--7 {
+    bottom: -20px;
+  }
+  
+  .sprinkle--8 {
+    left: -20px;
+  }
