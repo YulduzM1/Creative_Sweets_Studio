@@ -80,6 +80,9 @@ hr {
     transform: scale(1.2);
   }
 }
+img {
+  max-width: 300px;
+}
 .img-data {
     float: left;
 }
