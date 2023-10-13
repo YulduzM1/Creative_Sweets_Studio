@@ -1,33 +1,31 @@
- body{
+body{
     background-color: rgb(158, 173, 240);
-    font-family: 'Courier New', Courier, monospace;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
     display: flex;
     flex-direction: column;
 }
 h1{
     text-align: center;
-    font-family: 'Courier New', Courier, monospace;
     color:pink;
 }
 .ingredient{
-    display: block;
+    /*display: block;*/
     background-color: rgb(238, 205, 164);
     border: 5px solid rgb(216, 85, 107);
     color: brown;
     padding: 25px;
-    width: 30%;
-    margin-left: 10%;
     margin-top: 35px;
 }
 .icecream{
     position:relative;
     overflow: hidden;
     margin-top: 5%;
-    width: 10%;
+    width: 50%;
     margin-left:26%;
 }
 .option{
-    display: block;
+    /*display: block;*/
     background-color: rgb(238, 205, 164);
     border: 5px solid rgb(216, 85, 107);
     color: brown;
@@ -35,8 +33,44 @@ h1{
     width:200px;
     margin-bottom: 10px;
 }
-.choice{
-    position: absolute;
-    margin-left:800px ;
-    margin-top: 100px;
+ol{
+    list-style-type: none;
+    counter-reset: counter;
+}
+ol li:before {
+    content: "Step " counter(counter) ". ";
+    counter-increment: counter;
+    font-weight: bold;
+}
+main{
+    background-color: rgb(186, 192, 221);
+    padding: 80px 130px;
+    margin: 150px;
+    border-radius: 15px;
+    border-style: dashed;
+    border-width: 9px;
+    border-color: rgb(158, 173, 240);
+}
+.column{
+    column-count:2;
+    width: 100%;
+    column-gap: 4%;
+    column-fill: balance;
+    margin-left: 2%;
+    margin-top: 1%;
+}
+.slide{
+    animation-duration: 3s;
+    animation-name: slidein;
+}
+@keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 100%;
+    }
+  
+    to {
+      margin-left: 26%;
+      width: 50%;
+    }
 }
