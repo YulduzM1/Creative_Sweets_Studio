@@ -31,10 +31,10 @@ menu ul li a:hover {
 }
 
 /* page container */
-/* .container {
+.container {
   padding: 50px;
   margin: 50px;
-} */
+}
 
 .border {
   background-color: #d2eff7;
@@ -42,6 +42,14 @@ menu ul li a:hover {
   border-style: dashed;
   border-width: 9px;
   border-color: #4dc1e1;
+}
+.border2 {
+  border-style: solid;
+  border-color: #eac9c9;
+  border-color: #4dc1e1;
+  background-color: #ffe6e6;
+  background-color: #ffffff;
+  border-width: 9px;
 }
 
 
@@ -92,8 +100,10 @@ h2 {
 
 .recipe ol li {
   animation-name: fade;
-  animation-duration: 5s;
+  animation-duration: 15s;
   animation-iteration-count: 1;
+  letter-spacing: 3px;
+  margin: 5px;
 }
 
 
@@ -120,13 +130,12 @@ input[type="checkbox"]:checked + label {
   padding: 5px;
 }
 .container hr {
-  width: 75%;
+  width: 85%;
   color: #4dc1e1;
   border: solid black 2px;
   margin-top: 40px;
   margin-bottom: 40px;
 }
-
 
 .menu {
   float: left;
