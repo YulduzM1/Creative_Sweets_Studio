@@ -1,91 +1,199 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="cupcake.css">
-</head>
-<body>
+    <link rel="stylesheet" href="cupcake.css" />
+  </head>
+  <body>
+    <menu>
+      <ul>
+        <li><a href="index.html">Creative Sweets Studio</a></li>
+        <li><a href="home.html">Recipes</a></li>
+        <li><a href="rewards.html">Rewards</a></li>
+      </ul>
+    </menu>
+
     <div class="container">
-        <h1>Delicious Cupcakes</h1>
-        <div class="options">
-            <div class="img-data" class="pulse">
-                <img src="assemble_cupcake/cc-i-c.png" class="top" alt="">
+      <h1>Delicious Cupcakes</h1>
+
+      <div class="row">
+        <div class="data">
+          <div class="img-data" class="">
+            <!-- <img src="assemble_cupcake/cc-i-c.png" class="top" alt="">
                 <img src="assemble_cupcake/cc-b-c.png" class="mid" alt="">
-                <img src="assemble_cupcake/cc-w.png" class="bottom" alt="">
-                <img src="/assets/cupcake/cupcake.png" alt="cupcake" id=".c-flavor" class="pulse">
-            </div> 
-            
-            <div class="menu">
-            <div>
-                    <select name="flavors" id="flavors">
-                        <option value="Flavors" disabled>Flavors</option>
-                        <option value="vanilla">Vanilla</option>
-                        <option value="chocolate">Chocolate</option>
-                        <option value="strawberry">Strawberry</option>
-                    </select>
-                </div>
-                <div>
-                    <select name="toppings" id="toppings">
-                        <option value="Toppings" disabed>Toppings</option>
-                        <option value="sprinkles">Sprinkles</option>
-                        <option value="marshmallows">Marshmallows</option>
-                        <option value="cookie">Cookie Crumble</option>
-                    </select>
-                </div>
-            </div>
+                <img src="assemble_cupcake/cc-w.png" class="bottom" alt=""> -->
+            <img
+              src="/assets/cupcake/cupcake.png"
+              alt="cupcake"
+              id=".c-flavor"
+              class="pulse"
+            />
+          </div>
+          <!-- <div class="bowl" class="">
+            <img
+              src="/assets/cupcake/cupcake.png"
+              alt="cupcake"
+              id=".c-flavor"
+              class="sway"
+            />
+          </div> -->
+
+          <select name="flavors" id="flavors">
+            <option value="Flavors" disabled>Flavors</option>
+            <option value="vanilla">Vanilla</option>
+            <option value="chocolate">Chocolate</option>
+            <option value="strawberry">Strawberry</option>
+          </select>
+          
+          <select name="toppings" id="toppings">
+            <option value="Toppings" disabed>Toppings</option>
+            <option value="sprinkles">Sprinkles</option>
+            <option value="marshmallows">Marshmallows</option>
+            <option value="cookie">Cookie Crumble</option>
+          </select>
         </div>
-        <div class="ingredients">
-            <h2>Ingredients</h2>
-            <div class="inner-ingredients">
-                <h3>Base Cupcake</h3>
-                <ul>
-                    <li>3 cups all purpose flour</li>
-                    <li>2 cups sugar</li>
-                    <li>3 tsb baking powder</li>
-                    <li>1 tsp salt</li>
-                    <li>1 cup milk</li>
-                    <li>1/2 cup vegetable oil</li>
-                    <li>1 cup water</li>
-                    <li>2 large eggs</li>
-                    <li class="c-flavor">1/2 cup cocoa powder</li>
-                    <li class="c-flavor">1 tsb expresso powder</li>
-                    <li class="c-flavor">2 tsb vanilla extract</li>
-                </ul>
-                <h3>Frosting</h3>
-                <ul>
-                    <li>1 cup unsalted butter</li>
-                    <li>4 cups powdered sugar</li>
-                    <li>2 tsp vanilla extract</li>
-                    <li>2-3 tsp water or milk</li>
-                    <li>pinch of salt</li>
-                    <li class="c-frosting">2 cups cocoa powder</li>
-                    <li class="c-frosting">3-4 tbsp heavy whipping cream</li>
-                </ul>
+      </div>
+
+      <hr />
+
+      <div class="row">
+        <div class="ingredients border">
+          <h2>Ingredients</h2>
+          <hr>
+          <div class="inner-ingredients">
+            <h3>Base Cupcake</h3>
+            <div class="ingredient">
+              <input type="checkbox" id="item" />
+              <label for="item">3 cups all purpose flour</label>
             </div>
+            <div class="ingredient">
+              <input type="checkbox" id="item" />
+              <label for="item">2 cups sugar</label>
             </div>
-            <hr>
-            <div class="recipe">
-                <h2>Recipe</h2>
-                <ol>
-                <li>Preheat the oven to 350 degrees.</li>
-                <li>Add the flours, sugar, baking powder, and salt into a mixing bowl. Then mix until combined.</li>
-                <li>Add the milk, vanilla extract, eggs, and vegetable oil into a bowl. Then mix until combined.</li>
-                <li>Now we can add our wet ingredients to the dry ingredients. Combine the two bowls and mix until well combined.</li>
-                <li>Now we will add the water to our bowl. Add it slowly while we mix. Whip the side of the bowl to prevent dry patches of dough from sticking.</li>
-                <li>Fill the cupcake liners with the batter about half way.</li>
-                <li>Bake for 15 minutes (or until a toothpick comes out clean).</li>
-                <li>Allow the cupcakes to cool on a cooling rack on the stove.</li>
-                <li>Get a separate bowl to mix the frosting.</li>
-                <li>Add 2 cups of powdered sugar and soften butter to a mixing bowl.</li>
-                <li>Mix until well combined.</li>
-                <li>Add vanilla extract and a tablespoon of milk, and mix until combined.</li>
-                <li>Taste the mixture and adjust the ratio as needed.</li>
-                <li>Once the cupcakes are cooled you can frost them and serve.</li>
-            </ol>
+            <div class="ingredient">
+              <input type="checkbox" id="item" />
+              <label for="item">3 tsb baking powder</label>
+            </div>
+
+            <div class="ingredient">
+              <input type="checkbox" id="item" />
+              <label for="item">1 tsp salt</label>
+            </div>
+            <div class="ingredient">
+              <input type="checkbox" id="item" />
+              <label for="item">1 cup milk</label>
+            </div>
+            <div class="ingredient">
+              <input type="checkbox" id="item" />
+              <label>1/2 cup vegetable oil</label><br />
+            </div>
+
+            <div class="ingredient">
+              <input type="checkbox" id="item" />
+              <label for="item">1 cup water</label>
+            </div>
+            <div class="ingredient">
+              <input type="checkbox" id="item" />
+              <label for="item">2 large eggs</label>
+            </div>
+            <div class="ingredient">
+              <input type="checkbox" id="item" />
+              <label>1/2 cup cocoa powder</label><br />
+            </div>
+            <div class="ingredient">
+              <input type="checkbox" id="item" />
+              <label>1 tsb expresso powder</label><br />
+            </div>
+            <div class="ingredient">
+              <input type="checkbox" id="item" />
+              <label>2 tsb vanilla extract</label>
+            </div>
+
+            <!-- <li class="c-flavor">1/2 cup cocoa powder</li>
+                <li class="c-flavor">1 tsb expresso powder</li>
+                <li class="c-flavor">2 tsb vanilla extract</li> -->
+
+            <!-- INGREDIENT - SECONDARY SECTION -->
+
+            <h3>Frosting</h3>
+            <div class="ingredient">
+              <input type="checkbox" id="item" />
+              <label>1 cup unsalted butter</label>
+            </div>
+            <div class="ingredient">
+              <input type="checkbox" id="item" />
+              <label>4 cups powdered sugar</label>
+            </div>
+            <div class="ingredient">
+              <input type="checkbox" id="item" />
+              <label>2 tsp vanilla extract</label>
+            </div>
+            <div class="ingredient">
+              <input type="checkbox" id="item" />
+              <label>2-3 tsp water or milk</label>
+            </div>
+            <div class="ingredient">
+              <input type="checkbox" id="item" />
+              <label>pinch of salt</label>
+            </div>
+            <div class="ingredient">
+              <input type="checkbox" id="item" />
+              <label>2 cups cocoa powder</label>
+            </div>
+            <div class="ingredient">
+              <input type="checkbox" id="item" />
+              <label>3-4 tbsp heavy whipping cream</label>
+            </div>
+
+            <!-- <li class="c-frosting">2 cups cocoa powder</li>
+              <li class="c-frosting">3-4 tbsp heavy whipping cream</li> -->
+          </div>
         </div>
-        <hr>
+
+        <!-- <hr /> -->
+        <div class="recipe border">
+          <h2>Recipe</h2>
+          <hr>
+          <ol>
+            <li>Preheat the oven to 350 degrees.</li>
+            <li>
+              Add the flours, sugar, baking powder, and salt into a mixing bowl.
+              Then mix until combined.
+            </li>
+            <li>
+              Add the milk, vanilla extract, eggs, and vegetable oil into a
+              bowl. Then mix until combined.
+            </li>
+            <li>
+              Now we can add our wet ingredients to the dry ingredients. Combine
+              the two bowls and mix until well combined.
+            </li>
+            <li>
+              Now we will add the water to our bowl. Add it slowly while we mix.
+              Whip the side of the bowl to prevent dry patches of dough from
+              sticking.
+            </li>
+            <li>Fill the cupcake liners with the batter about half way.</li>
+            <li>Bake for 15 minutes (or until a toothpick comes out clean).</li>
+            <li>Allow the cupcakes to cool on a cooling rack on the stove.</li>
+            <li>Get a separate bowl to mix the frosting.</li>
+            <li>
+              Add 2 cups of powdered sugar and soften butter to a mixing bowl.
+            </li>
+            <li>Mix until well combined.</li>
+            <li>
+              Add vanilla extract and a tablespoon of milk, and mix until
+              combined.
+            </li>
+            <li>Taste the mixture and adjust the ratio as needed.</li>
+            <li>Once the cupcakes are cooled you can frost them and serve.</li>
+          </ol>
+        </div>
+      </div>
+
+      <!-- <hr /> -->
     </div>
-    </body>
-    </html>
+  </body>
+</html>
