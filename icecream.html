@@ -3,14 +3,34 @@
     <head>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="icecream.css">
-        <title>Icecream Recipe</title>
+        <title>Ice-cream Recipe</title>
     </head>
     <body>
     <main>
-        <h1>Homemade Icecream</h1>
-    <div class="column">
-            <img src="icecream.png" alt="icecream" class="icecream slide">
-        
+        <h1>Homemade Vanilla Ice-cream</h1>
+        <p>Click on the toppings to add them to your ice-cream!</p>
+    
+            <input type="checkbox" id="sprinkles">
+        <label for="sprinkles">sprinkles?</label>
+            <img src="sprinkles.png" alt="sprinkles" class="sprinkles">
+
+            <input type="checkbox" id="whippedcream">
+        <label for="whippedcream">whipped cream?</label>
+            <img src="whippedcream.png" alt="whippedcream" class="whippedcream">
+
+            <input type="checkbox" id="cherry">
+        <label for="cherry">cherry?</label>
+            <img src="cherry.png" alt="cherry" class="cherry">
+
+            <input type="checkbox" id="cone">
+        <label for="cone">cup or cone?</label>
+            <img src="v_cup.png" alt="icecream" class="icecream slide">
+    
+            <input type="checkbox" id="confetti">
+        <label for="confetti">Click here when your done decorating your homemade ice-cream!</label>
+            <img src="confetti.png" alt="confetti" class="confetti">
+
+            <br><br><br><br><br>
             <div class="ingredient">
                 <ul>    
                     <h3>Ingredients</h3>
@@ -19,6 +39,8 @@
                     <li>½ cup cold milk</li>
                     <li>1 tablespoon vanilla extract</li>
                     <li>⅛ teaspoon salt</li>
+                    <li>1 pack of 12 cones</li>
+                    <li>And your favorite toppings!</li>
                 </ul>
             </div>
 
@@ -26,43 +48,14 @@
                 <ol>
                     <h3>Recipe</h3>
                     <li>Stir milk, cream, and sugar in a saucepan over low heat until sugar has dissolved. Heat just until the mixture is hot and a small ring of foam appears around the edge. </li>
-                    <li> Transfer cream mixture to a pourable container such as a large measuring cup. Stir in vanilla extract and chill mix thoroughly, at least 2 hours. (Overnight is best.)</li>
-                    <li> Pour cold ice cream mix into an ice cream maker, turn on the machine, and churn according to manufacturer's directions, 20 to 25 minutes.</li>
+                    <li>Transfer cream mixture to a pourable container such as a large measuring cup. Stir in vanilla extract and chill mix thoroughly, at least 2 hours. (Overnight is best.)</li>
+                    <li>Pour cold ice cream mix into an ice cream maker, turn on the machine, and churn according to manufacturer's directions, 20 to 25 minutes.</li>
                     <li>When ice cream is softly frozen, serve immediately or place a piece of plastic wrap directly on the ice cream and place in the freezer to ripen, 2 to 3 hours.</li>
+                    <li>(Optional) When serving put in a cone and top with your favorite toppings. </li>
                 </ol>
             </div>
             <br><br><br><br><br>
-        
-          <div class="option">
-              <label>cone or cup</label>
-              <select id="cone/cup">
-                  <option value="cone">cone</option>
-                  <option value="cup">cup</option>
-              </select>
-          </div>
-
-          <div class="option">
-              <label>which flavor?</label>
-              <select id="flavor">
-                  <option value="vanilla">vanilla</option>
-                  <option value="chocolate">chocolate</option>
-                  <option value="strawberry">strawberry</option>
-              </select>
-          </div>
-
-          <div class="option">
-              <label>which toppings?</label>
-              <select id="toppings">
-                  <option value="sprinkles">sprinkles</option>
-                  <option value="fudge">fudge</option>
-                  <option value="whippedcream">whipped cream</option>
-                  <!--<input type="checkbox" id="changeTopping">-->
-              </select>
-          </div>
-          <!--<input type="submit" value="Submit">-->
-          <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-          <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    </div>
     </main>
     </body>
 </html>
+
