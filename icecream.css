@@ -1,4 +1,4 @@
- body{
+body{
     background-color: rgb(158, 173, 240);
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1em;
@@ -103,7 +103,7 @@ input[type="checkbox"]{
     display:none;
 }
 input[type="checkbox"]:checked +label[for="cone"]+ img{
-    content:url('va_cone.png');
+    content:url('assets/va_cone.png');
 }
 input[type="checkbox"]:checked +label[for="sprinkles"]+ img {
     opacity: 1;
