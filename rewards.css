@@ -35,7 +35,6 @@ menu ul li a:hover {
   padding: 50px;
   margin: 50px;
 }
-
 .border {
   background-color: #d2eff7;
   border-radius: 15px;
@@ -68,7 +67,7 @@ h1 {
   margin: 50px;
   text-align: center;
   animation: lookhere;
-  animation-duration: 2s;
+  animation-duration: 8s;
   animation-iteration-count: infinite;
 }
 h2 {
@@ -84,23 +83,20 @@ h2 {
 }
 
 /* section - ingredients */
-.ingredients,
-.recipe {
-  clear: both;
-  width: 500px;
+.content {
+  width: 800px;
   min-width: 400px;
   padding: 20px;
-  margin: 20px;
-}
-
-.ingredient {
-  font-size: 20px;
   margin-bottom: 10px;
+  font-size: 30px;
   letter-spacing: 3px;
+  line-height: 2;
+  text-align: center;
 }
 
-.inner-ingredients {
-  padding: 0 40px;
+.content p {
+  margin: auto;
+  padding: 40px;
 }
 
 @keyframes fade {
@@ -112,47 +108,38 @@ h2 {
   }
 }
 
-.recipe ol li {
-  animation-name: fade;
-  animation-duration: 15s;
-  animation-iteration-count: 1;
-  letter-spacing: 3px;
-  margin: 5px;
-}
 
-.recipe ol li:hover {
-  color: red;
+@keyframes special {
+  0% {
+    transform: translateY(0px);
+    color: black;
+  }
+  50% {
+    transform: scale(2);
+    color: red;
+  }
+  100% {
+    transform: translateY(0px);
+    color: gold;
+  }
 }
-
-
-input[type="checkbox"]:checked + label {
-  text-decoration: line-through;
-  font-style: italic;
-  color: red;
+#rewards1 {
+  display: none;
 }
-
-.container ul {
-  margin-left: 10px;
+#rewards0 input[type="checkbox"]:checked + #rewards1 {
+  display: block;
 }
-.container ol {
-  list-style-type: none;
-  counter-reset: counter;
+#rewards2 {
+  display: none;
 }
-.container ol li:before {
-  content: "Step " counter(counter) ". ";
-  counter-increment: counter;
+#rewards1 input[type="text"]:not(:placeholder-shown) + hr + #rewards2 {
+  display: block;
+  animation: special;
+  animation-duration: 5s;
+  color: gold;
   font-weight: bold;
-}
-.container li {
-  font-size: 1.2em;
-  padding: 5px;
-}
-.container hr {
-  width: 85%;
-  color: #4dc1e1;
-  border: solid black 2px;
-  /* margin-top: 20px; */
-  margin-bottom: 40px;
+  outline: #4dc1e1;
+  text-shadow: 1px 1px purple, -1px -1px purple, 1px -1px purple, -1px 1px purple;
 }
 
 .menu {
@@ -168,12 +155,6 @@ input[type="checkbox"]:checked + label {
   margin: 30px;
 }
 
-/* .c-flavor {
-    display: none;
-} */
-/* .c-icing {
-    display: none;
-} */
 
 .pulse {
   animation: pulse 1s infinite ease-in-out alternate;
@@ -192,17 +173,6 @@ input[type="checkbox"]:checked + label {
   animation-duration: 6s;
   animation-iteration-count: 1;
 } */
-
-/* .img-data {
-  display: block;
-} */
-
-#flavors option:checked[value="vanilla"] + .img-data {
-  display: none;
-  /* animation: main-ingredients;
-  animation-duration: 6s;
-  animation-iteration-count: 1; */
-}
 
 @keyframes main-ingredients {
   0% {
@@ -227,34 +197,3 @@ input[type="checkbox"]:checked + label {
     left: 0;
   }
 }
-
-
-/* img {
-  max-width: 300px;
-}
-.img-data {
-    float: left;
-} */
-
-/* .img-data .top {
-    position: relative;
-    top: 20px;
-    width: 530px;
-    z-index: 3;
-    
-}
-.img-data .mid {
-    position: absolute;
-    top: 410px;
-    width: 530px;
-    left: 350px;
-    z-index: 2;
-}
-.img-data .bottom {
-    position: absolute;
-    top: 418px;
-    width: 530px;
-    left: 355px;
-    z-index: 3;
-} */
-
