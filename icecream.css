@@ -94,7 +94,7 @@ input[type="checkbox"]{
     display:none;
 }
 input[type="checkbox"]:checked +label[for="cone"]+ img{
-    content:url('assets/va_cone.png');
+    content:url('va_cone.png');
 }
 input[type="checkbox"]:checked +label[for="sprinkles"]+ img {
     opacity: 1;
