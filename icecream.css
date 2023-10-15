@@ -4,6 +4,7 @@ body{
     font-size: 1em;
     color: rgb(66, 21, 101);
     display: flex;
+    margin: 0;
 }
 p{
     color:brown;
@@ -141,10 +142,11 @@ label{
     height: 100px;
     width: 100%;
     margin-top: 0;
+    border-bottom: rgb(2, 2, 2) solid 5px;
   }
 .menu ul {
     display: flex;
-    padding: 25px;
+    padding: 30px;
   }
 .menu ul li {
     list-style: none;
