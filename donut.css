@@ -1,9 +1,11 @@
 body {
   margin-top: 0%;
   background-image: url(background.jpeg);
-  background-color: #E1F8DC h;
-  border-radius: 15px;
+  background-color: #e1f8dc h;
 
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 15px;
+  margin: 0;
 }
 h1 {
   text-align: center;
@@ -13,14 +15,13 @@ h1 {
   cursor: grab;
 }
 
-
 #donut-image {
   transition: background-image 0.5s ease-in-out;
-  background-image: url('vanilla-donut.jpeg');
+  background-image: url("vanilla-donut.jpeg");
 }
 
 #flavor-chocolate:checked ~ #donut-image {
-  background-image: url('chocolate-donut.jpeg');
+  background-image: url("chocolate-donut.jpeg");
 }
 
 .btn {
@@ -91,15 +92,36 @@ li {
   margin-bottom: 5px;
 }
 
+/* navigation menu */
+menu {
+  background-color: #ffe6e6;
+  min-height: 80px;
+  margin: 0;
+  border-bottom: rgb(2, 2, 2) solid 5px;
+}
+menu ul {
+  display: flex;
+  padding: 30px;
+}
+menu ul li {
+  list-style: none;
+}
+menu ul li a {
+  padding: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+}
+menu ul li a:hover {
+  background-color: #ff6666;
+}
+
 .main {
   background-color: #ffe6e6;
   min-height: 80px;
   margin: 0;
   border-bottom: rgb(2, 2, 2) solid 5px;
-
-
 }
-
 
 .main ul {
   list-style-type: disc;
@@ -116,8 +138,8 @@ li {
   font-weight: bold;
   cursor: pointer;
 }
-.main li:hover{
-    background-color: rgb(207, 79, 79);
+.main li:hover {
+  background-color: rgb(207, 79, 79);
 }
 
 .main a {
@@ -127,7 +149,7 @@ li {
   text-decoration: none;
 }
 
-.container:hover{
+.container:hover {
   background-color: rgb(126, 113, 43);
   cursor: grab;
   display: flex;
@@ -182,12 +204,9 @@ li {
   left: -20px;
 }
 
-
-
 #img {
   transition: 0.5s ease-in-out;
-  background-image: url('vanilladonut.jpeg');
-
+  background-image: url("vanilladonut.jpeg");
 }
 
 .page {
@@ -214,12 +233,12 @@ h2 {
 
 @keyframes fadeIn {
   from {
-      opacity: 0;
-      transform: translateY(20px);
+    opacity: 0;
+    transform: translateY(20px);
   }
   to {
-      opacity: 1;
-      transform: translateY(0);
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
@@ -228,29 +247,34 @@ h2 {
   animation: fadeIn 1s forwards;
 }
 
-
-.animate:nth-child(1) { animation-delay: 0.5s; }
-.animate:nth-child(2) { animation-delay: 1s; }
-.animate:nth-child(3) { animation-delay: 1.5s; }
-.animate:nth-child(4) { animation-delay: 2s; }
-
-
+.animate:nth-child(1) {
+  animation-delay: 0.5s;
+}
+.animate:nth-child(2) {
+  animation-delay: 1s;
+}
+.animate:nth-child(3) {
+  animation-delay: 1.5s;
+}
+.animate:nth-child(4) {
+  animation-delay: 2s;
+}
 
 .donut-spinner {
   margin: 20px auto;
 }
 
-.cooking-gif, .donut-gif {
-width: 200px; 
-height: auto;
-margin: 20px;
+.cooking-gif,
+.donut-gif {
+  width: 200px;
+  height: auto;
+  margin: 20px;
 }
 
-
 .cooking-gif {
-float: left; 
+  float: left;
 }
 
 .donut-gif {
-float: right;
+  float: right;
 }
