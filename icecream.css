@@ -14,6 +14,9 @@ p{
     padding: 25px;
     margin-top: 35px;
 }
+.ingredient h3{
+    text-align: center;
+}
 .icecream{
     position:relative;
     overflow: hidden;
