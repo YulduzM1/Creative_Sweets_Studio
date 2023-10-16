@@ -1,13 +1,50 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1em;
-	background-color: #faf3e0;
+	background-color: #E1F8DC;
+	padding:0;
+	margin:0;
+}
+.menu {
+    background-color: #ffe6e6;
+    min-height: 80px;
+    padding:0;
+	border: none;
+	border-bottom: 5px solid rgb(2, 2, 2);
+	position:absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+   
 }
 
-html {
-    background-color: #E1F8DC;
-	border: 6.5px dashed orange;
-	margin: 100px;
+.menu ul {
+    display: flex;
+    padding: 30px;
+   
+}
+
+.menu ul li {
+    list-style: none;
+   
+}
+
+.menu ul li a {
+    padding: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+ 
+}
+
+.menu ul li a:hover {
+    background-color: #ff6666;
+}
+.dashed-border {
+    border: 6.5px dashed orange;
+    margin: 130px;
+    padding: 10px;
+    position: relative; 
 }
 
 #topname {
@@ -32,11 +69,12 @@ html {
     font-family: Verdana;
     border-radius: 2px;
     font-size: 10pt;
+	background-color: #FEF8DD;
 }
 
 .abus-recipe h1,
 .abus-recipe h3 {
-    color: purple;
+	color:purple;
     padding: 2%;
     background-color: #FFB6C1;
     text-align: center;
@@ -49,7 +87,7 @@ html {
     cursor: pointer;
 }
 .abus-recipe img {
-    width: 25%;
+    width: 30%;
     height: 25%;
     border: 5px solid pastel;
     border-radius: 45%;
@@ -130,8 +168,8 @@ html {
 .info-container li:hover {
     color: #61C49A;
     font-size: 16px;
-    transition: color 0.3s, font-size: 0.3s;
-    cursor: pointer;
+	transition: color 0.3s, font-size: 0.3s;
+	  cursor: pointer;
 }
 
 .abus-recipe #ingredients {
@@ -157,7 +195,7 @@ html {
 }
 .nutrition-table {
     width: 40%;
-    margin-left: 30%;
+	margin-left: 30%;
     border-collapse: collapse;
     border: 1px solid #ccc;
 
@@ -189,18 +227,17 @@ html {
 }
 
  .gif1{
-     margin-right: 70px;
-     margin-bottom: 200px;
-     width: 80%;
-     height: 80%;
+	
+	margin-bottom: 250px;
+	width: 80%;
+    height: 80%;
 }
  .gif2{
 	
-    width: 70%;
+	width: 70%;
     height: 70%;
-    margin-left: 60%;
-    margin-top: -200px;
+	margin-left: 60%;
+	margin-top: -200px;
 	
 	
 }
-
