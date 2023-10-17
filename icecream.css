@@ -18,6 +18,13 @@ p{
 .ingredient h3{
     text-align: center;
 }
+.ingredient h3:hover{
+    font-size: large;
+}
+.ingredient li:hover{
+    color: rgb(64, 6, 64);
+    background-color: #ffe6e6af;
+}
 .icecream{
     position:relative;
     overflow: hidden;
@@ -121,6 +128,9 @@ label{
     float: right;
     margin-left: 10px;
     margin-top: 10px;
+}
+label:hover{
+    color: #ffe6e6;
 }
 @keyframes pulse {
 	0% {
