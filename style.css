@@ -78,7 +78,7 @@ body {
     padding: 2%;
     background-color: #FFB6C1;
     text-align: center;
-    transition: background-color 0.7s transform: 0.2s;
+    transition: background-color 0.7s; 
 }
 .abus-recipe h1:hover,
 .abus-recipe h3:hover {
@@ -89,7 +89,7 @@ body {
 .abus-recipe img {
     width: 30%;
     height: 25%;
-    border: 5px solid pastel;
+   
     border-radius: 45%;
     margin-left: 10%;
     margin-top: -12%;
@@ -116,7 +116,7 @@ body {
 
 .abus-recipe .info-container  {
     display: flex;
-    margin: 1;
+    margin: 0;
     gap: 2%;
 	
 }
@@ -168,7 +168,7 @@ body {
 .info-container li:hover {
     color: #61C49A;
     font-size: 16px;
-	transition: color 0.3s, font-size: 0.3s;
+	transition: color 0.3s;
 	  cursor: pointer;
 }
 
