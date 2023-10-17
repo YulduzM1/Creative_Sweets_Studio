@@ -114,7 +114,7 @@ h2 {
 
 .recipe ol li {
   animation-name: fade;
-  animation-duration: 15s;
+  animation-duration: 20s;
   animation-iteration-count: 1;
   letter-spacing: 3px;
   margin: 5px;
