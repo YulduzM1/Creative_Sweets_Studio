@@ -13,14 +13,7 @@ Welcome to the Dessert Web Page! This project is a simple web page dedicated to 
 
 ## Demo
 
-
-## Features
-
-## Installation
-
-## Usage
-
-## Customization
+ https://desserts-web-page.vercel.app/
 
 ## Contributing
 
